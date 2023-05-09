@@ -3,15 +3,16 @@
 
 ---  
 
-## The Problem
+## Problem
 
 This is a username generator extracted from Oracle Identity Manager (IDM) files, which its function is to automatically create logins for new users into database within the company's rules. However this file is a little hard to understand which is the username that the generator is trying to create, it isn't creating within all the rules that we wanted and it only tries 3 times before stopping and having to someone create a login manually. One more thing is that it creates some usernames that can cause discomfort to users because the combinations create some improper usernames like "ANAL" for "Ana Lucia", for example.
 
-## The Solution
+## Solution
 
-I created a function that reduces the amount of IFs used to improve readability and probably performance (which isn't the focus, neither I tested it), and it tries more times when the fullname provided has more names in it. To manage the improper usernames, I created a blacklist file that the generator checks before returning so it won't generate any username that contains any of those blacklisted words.
+I created a function that reduces the amount of IFs used to improve readability and probably performance (which isn't the focus, neither was tested), and it tries more times when the fullname provided has more names in it. To manage the improper usernames, I created a blacklist file that the generator checks before returning so it won't generate any username that contains any of those blacklisted words.
 
 ## Rules:
+###### *Unchecked ones weren't implemented yet.
 > - [x] Maximum of 20 and minimum of 3 characters  
 > - [x] Outsourced users need to have a dot in the username  
 > - [ ] Employee usernames can have only one of the names or even the initials as username  
@@ -28,6 +29,7 @@ Eu criei uma função que reduz a quantidade de IFs utilizados pelo programa par
 
 
 ## Regras:
+###### *Opções desmarcadas ainda não foram implementadas.
 > - [x] Máximo de 20 e mínimo de 3 caracteres  
 > - [x] Terceirizados possuem ponto no login  
 > - [ ] Servidores podem ter login apenas com iniciais ou apenas 1 dos nomes  
