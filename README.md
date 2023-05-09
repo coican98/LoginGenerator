@@ -1,4 +1,4 @@
-## --------------------------------------------------EN en--------------------------------------------------
+## -----------------------------------EN en-----------------------------------
 
 ## The Problem
 
@@ -16,7 +16,7 @@ Not implemented yet:
 3- Employee usernames can have only one of the names or even the initials as username
 4- Trainee usernames will have a dot if the generator doesn't find any possibility without it
 
-## --------------------------------------------------PT br--------------------------------------------------
+## -----------------------------------PT br-----------------------------------
 
 ## Problema
 
