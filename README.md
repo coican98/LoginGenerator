@@ -1,4 +1,4 @@
-## -----------------------------------EN en-----------------------------------
+### ----------------------------------- EN en  -----------------------------------
 
 ## The Problem
 
@@ -9,14 +9,12 @@ This is a username generator extracted from Oracle Identity Manager (IDM) files,
 I created a function that reduces the amount of IFs used to improve readability and probably performance (which isn't the focus, neither I tested it), and it tries more times when the fullname provided has more names in it. To manage the improper usernames, I created a blacklist file that the generator checks before returning so it won't generate any username that contains any of those blacklisted words.
 
 ## Rules:
-1- Maximum of 20 and minimum of 3 characters
-2- Outsourced users need to have a dot in the username
+> - [x] Maximum of 20 and minimum of 3 characters  
+> - [x] Outsourced users need to have a dot in the username  
+> - [ ] Employee usernames can have only one of the names or even the initials as username  
+> - [ ] Trainee usernames will have a dot if the generator doesn't find any possibility without it  
 
-Not implemented yet:
-3- Employee usernames can have only one of the names or even the initials as username
-4- Trainee usernames will have a dot if the generator doesn't find any possibility without it
-
-## -----------------------------------PT br-----------------------------------
+### ----------------------------------- PT br -----------------------------------
 
 ## Problema
 
@@ -28,9 +26,7 @@ Eu criei uma função que reduz a quantidade de IFs utilizados pelo programa par
 
 
 ## Regras:
-1- Máximo de 20 e mínimo de 3 caracteres
-2- Terceirizados possuem ponto no login
-
-Ainda não implementadas:
-3- Servidores podem ter login apenas com iniciais ou apenas 1 dos nomes
-4- Estagiarios se não tiver mais possibilidades, tentar com ponto
+> - [x] Máximo de 20 e mínimo de 3 caracteres  
+> - [x] Terceirizados possuem ponto no login  
+> - [ ] Servidores podem ter login apenas com iniciais ou apenas 1 dos nomes  
+> - [ ] Estagiarios se não tiver mais possibilidades, tentar com ponto  
